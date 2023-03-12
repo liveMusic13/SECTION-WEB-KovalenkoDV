@@ -539,9 +539,17 @@ div > .content-block__button_border {
 .block-content__arrowLeft {
   margin-right: 15px;
 }
+.block-content__arrowLeft:hover {
+  width: 46px;
+  height: 16px;
+}
 
 .block-content__arrowRight {
   margin-left: 15px;
+}
+.block-content__arrowRight:hover {
+  width: 46px;
+  height: 16px;
 }
 
 .block-content__circle {
@@ -550,8 +558,12 @@ div > .content-block__button_border {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
 }
+.block-content__circle:hover {
+  width: 14px;
+  height: 14px;
+}
 
-.block-content__circle_white {
+.circle_active {
   background-color: #fff;
 }
 
@@ -580,11 +592,24 @@ div > .content-block__button_border {
   color: #E3B873;
   border-bottom: 1px solid #E3B873;
   padding-bottom: 5px;
+  cursor: pointer;
 }
 
 .completed__image {
   width: 680px;
   height: 460px;
+}
+@media (max-width: 767.98px) {
+  .completed__image {
+    width: 100%;
+    height: 360px;
+  }
+}
+@media (max-width: 475px) {
+  .completed__image {
+    width: 100%;
+    height: 260px;
+  }
 }
 
 .block-content__mobile-image-block {
@@ -1159,6 +1184,11 @@ div > .content-block__button_border {
   background-image: url(../img/apartaments/blueWall.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 475px) {
+  .typesOfRepair__image {
+    width: 100%;
+  }
 }
 
 .typesOfRepair__image_orange {
